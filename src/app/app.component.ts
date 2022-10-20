@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ZenduForms';
+  mapclicked = true;
+  listclicked = false;
+  mapClicked() {
+    this.mapclicked = true;
+    this.listclicked = false;
+  }
+  ListClicked() {
+    this.mapclicked = false;
+    this.listclicked = true;
+  }
 }
